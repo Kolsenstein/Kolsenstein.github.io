@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacknet</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="function.js"></script>
+    <scriptd defer src="Assets/libraries/anime.min.js"></script>
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <h1><a href="home.html" data-value="HACKNET">HACKNET</a></h1>
+        <ul>
+            <li><a href="#game-overview">GAME INFO</a></li>
+            <li><a href="">GALLERY</a></li>
+            <li><a href="">DLC</a></li>
+            <li class="about"><a href="">ABOUT US</a></li>
+        </ul>
+        <a href="">
+            <div class="buy">
+                <div class="buy-content">
+                    <p>BUY</p>
+                    <p>AVAILABLE NOW</p>
+                </div>
+            </div>
+        </a>
+    </header>
+
+    <!--Video Background-->
+    <section class="hacknet-bg">
+        <!--Video-->
+        <video autoplay loop muted>
+            <source src="Assets/Videos/background.mp4" type="video/mp4">
+        </video>
+        <!--Bar & Logo-->
+        <div class="hacknet-logo">
+            <img src="Assets/Photos/Hacknet.jpg">
+        </div>
+        <div class="bar"/>
+    </section>
+    
+    <section class="game-overview" id="game-overview">
+        <h2>GAME OVERVIEW</h2>
+        <div class="real-hack">
+            <img class="preview" src="Assets/Photos/real_hack.png" style="top: 8vh;">
+            <div class="game-content" style="left: 15vw; top: -10vh;">
+                <h4>REAL HACKING</h4>
+                <p>Based on actual UNIX commands, Hacknet focuses on real hacking, 
+                    not the Hollywood-style version of it. 
+                    This creates a truly immersive experience and puts players 
+                    right in the thick of trying to break through the firewalls.</p>
+            </div>
+        </div>
+        <div class="mystery">
+            <img class="preview" src="Assets/Photos/mystery.png">
+            <div class="game-content" style="top: -20vh;">
+                <h4>UNLOCK THE MYSTERY OF BIT</h4>
+                <p>A hacker is dead and the media reports don’t add up. 
+                    When you are contacted by his “ghost”–an automated 
+                    failsafe system–you’re drawn into the dark and murky 
+                    world of underground hackers.</p>
+            </div>
+        </div>
+
+        <div class="immersion">
+            <img class="preview" src="Assets/Photos/immersion.png">
+            <div class="game-content" style="left: 15vw; top: -15vh;">
+                <h4>FULL IMMERSION</h4>
+                <p>You are thrust into a persistent virtual world with no “levels” or 
+                    obvious game elements to break the illusion. Follow the guidance 
+                    of the emails from Bit or just dive down the rabbit hole, chasing down 
+                    clues and snippets of information you find as you explore different systems.</p>
+            </div>
+        </div>
+
+        <div class="line"/>
+    </section>
+
+    <section class="gallery">
+        <div class="border">
+            <div class="terminal">
+                <h1>//Gallery</h1>
+                <ul>
+                    <li onclick="changeImage('./Assets/Photos/entech.png')" class="gallery_item">../entech.png</li>
+                    <li onclick="changeImage('./Assets/Photos/csec.png')" class="gallery_item">../csec.png</li>
+                    <li onclick="changeImage('./Assets/Photos/death_screen.png')" class="gallery_item">../death_screen.png</li>
+                    <li onclick="changeImage('./Assets/Photos/hacking.png')" class="gallery_item">../hacking.png</li>
+                    <a href="./point/point.html"><li>../point_clicker.exe</li></a>
+                    <li id="type" class="gallery_item">>_</li>
+                </ul>
+            </div>
+            <div class="gallery_container">
+                <img id="image" class="gallery_img" src="./Assets/Photos/immersion.png" alt="Image">
+            </div>
+        </div>
+    </section>
+    
+    <section class="end-card">
+        <h2>OUT NOW</h2>
+        
+        <div class="list">
+            <ul>
+                <li class="head">Release Date</li>
+                <ul>
+                    <li class="info">August 2021</li>
+                </ul>
+                <li class="head">Platforms</li>
+                <ul>
+                    <li class="info">PC/Mac/Linux</li>
+                </ul>
+                <li class="head">Price</li>
+                <ul>
+                    <li class="info">$9.99 USD</li>
+                </ul>
+            </ul>
+        </div>
+
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d458076.08889319387!2d27.718087155239125!3d-26.238883282886604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e945b68fd2328d3%3A0xd48e34d6eab0db5a!2sBT%20Games%20Vaal%20Mall!5e0!3m2!1sen!2sza!4v1696791433680!5m2!1sen!2sza"
+                width="700" 
+                height="450">
+            </iframe>
+        </div>
+
+        <div class="icon">
+            <a href="https://store.steampowered.com/app/365450/Hacknet/"><img src="Assets/Photos/social/steam.png" alt="Steam.com"></a>
+            <a href="https://www.gog.com/en/game/hacknet"><img src="Assets/Photos/social/gog.png" alt="GOG.com"></a>
+        </div>
+    </section>
+
+    <footer>
+        <a href="https://www.indiedb.com/company/team-fractal-alligator"><img src="Assets/Photos/team.jpg" class="team"></a>        
+        <img class="esrb" src="Assets/Photos/esrb.jpg">
+        <img class="rating" src="Assets/Photos/rating.jpg">
+        <div class="footer-text">
+            <h3>Talk with us</h3>
+                <div class="socials">
+                    <a href="https://twitter.com/hacknetOS"><img class="twitter" src="Assets/Photos/social/twitter.png"></a>
+                    <a href="https://www.youtube.com/@FellowTraveller"><img class="youtube" src="Assets/Photos/social/youtube.png"></a>
+                    <a href="https://www.facebook.com/FellowTravellerGames/"><img class="facebook" src="Assets/Photos/social/facebook.png"></a>
+                    <a href="https://www.instagram.com/fellowtravellergames/?hl=en"><img class="instagram" src="Assets/Photos/social/instagram.png"></a>
+                    <a href="mailto:press@fellowtraveller.games"><img class="mail" src="Assets/Photos/social/mail.png"></a>
+                </div>
+            <p>To view our privacy policy, <a href="https://www.fellowtraveller.games/privacy-policy">click here</a>. Fellow Traveller is a 
+            trademark of Surprise Attack Pty Ltd, trading as Fellow Traveller Games.</p>
+        </div>
+    </footer>
+</body>
+</html>
