@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacknet</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="function.js"></script>
+</head>
+<body>
+    <main>
+        <div class="points" id="points"><h1>0</h1></div>
+        <div class="menu">
+            <div class="upgrades">
+                <button class="ubtn" id="click_me" onmouseover="upgradeName('Click Me!')" onclick="click_me()">[<span id="clickCount">000</span>] Click Me!</button>
+                <button class="ubtn" id="autoclickv1" onclick="UpgradeClick()" onmouseover="upgradeName('AutoClicker V1')">[<span id="AutoClicker V1">000</span>] Autoclicker V1</button>
+                <button class="ubtn" id="autoclickv2" onclick="UpgradeClick()" onmouseover="upgradeName('AutoClicker V2')">[<span id="AutoClicker V2">000</span>] Autoclicker V2</button>
+                <button class="ubtn" id="pointereiellion" onclick="UpgradeClick()" onmouseover="upgradeName('Pointereiellion')">[<span id="Pointereiellion">000</span>] Pointereiellion</button>
+                <button class="ubtn" id="u4" onclick="UpgradeClick()" onmouseover="upgradeName('Upgrade 4')">[<span id="Upgrade 4">000</span>] Upgrade 4</button>
+                <button class="ubtn" id="u5" onclick="UpgradeClick()" onmouseover="upgradeName('Upgrade 5')">[<span id="Upgrade 5">000</span>] Upgrade 5</button>
+                <button class="ubtn" id="u6" onclick="UpgradeClick()" onmouseover="upgradeName('Upgrade 6')">[<span id="Upgrade 6">000</span>] Upgrade 6</button>
+                <button class="ubtn" id="u7" onclick="UpgradeClick()" onmouseover="upgradeName('Upgrade 7')">[<span id="Upgrade 7">000</span>] Upgrade 7</button>
+                <button class="ubtn" id="u8" onclick="UpgradeClick()" onmouseover="upgradeName('Upgrade 8')">[<span id="Upgrade 8">000</span>] Upgrade 8</button>
+                <button class="ubtn" id="u9" onclick="UpgradeClick()" onmouseover="upgradeName('Upgrade 9')">[<span id="Upgrade 9">000</span>] Upgrade 9</button>
+                <button class="ubtn" id="u10" onclick="UpgradeClick()" onmouseover="upgradeName('Upgrade 10')">[<span id="Upgrade 10">000</span>] Upgrade 10</button>
+                <button class="ubtn" id="u11" onclick="UpgradeClick()" onmouseover="upgradeName('Upgrade 11')">[<span id="Upgrade 11">000</span>] Upgrade 11</button>
+                <button class="ubtn" id="u12" onclick="UpgradeClick()" onmouseover="upgradeName('Upgrade 12')">[<span id="Upgrade 12">000</span>] Upgrade 12</button>
+                <button class="ubtn" id="u13" onclick="UpgradeClick()" onmouseover="upgradeName('Upgrade 13')">[<span id="Upgrade 13">000</span>] Upgrade 13</button>
+                <button class="ubtn" id="u14" onclick="UpgradeClick()" onmouseover="upgradeName('Upgrade 14')">[<span id="Upgrade 14">000</span>] Upgrade 14</button>
+                <button class="ubtn" id="u15" onclick="UpgradeClick()" onmouseover="upgradeName('Upgrade 15')">[<span id="Upgrade 15">000</span>] Upgrade 15</button>
+                <button class="ubtn" id="u16" onclick="UpgradeClick()" onmouseover="upgradeName('Upgrade 16')">[<span id="Upgrade 16">000</span>] Upgrade 16</button>
+                <button class="ubtn" id="u17" onclick="UpgradeClick()" onmouseover="upgradeName('Upgrade 17')">[<span id="Upgrade 17">000</span>] Upgrade 17</button>
+                <button class="ubtn" id="u18" onclick="UpgradeClick()" onmouseover="upgradeName('Upgrade 18')">[<span id="Upgrade 18">000</span>] Upgrade 18</button>
+                <button class="ubtn" id="u19" onclick="UpgradeClick()" onmouseover="upgradeName('Upgrade 19')">[<span id="Upgrade 19">000</span>] Upgrade 19</button>
+                <button class="ubtn" id="u20" onclick="UpgradeClick()" onmouseover="upgradeName('Upgrade 20')">[<span id="Upgrade 20">000</span>] Upgrade 20</button>
+                <button class="ubtn" id="u21" onclick="UpgradeClick()" onmouseover="upgradeName('Upgrade 21')">[<span id="Upgrade 21">000</span>] Upgrade 21</button>
+                <button class="ubtn" id="u22" onclick="UpgradeClick()" onmouseover="upgradeName('Upgrade 22')">[<span id="Upgrade 22">000</span>] Upgrade 22</button>
+                <button class="ubtn" id="u23" onclick="UpgradeClick()" onmouseover="upgradeName('Upgrade 23')">[<span id="Upgrade 23">000</span>] Upgrade 23</button>
+                <button class="ubtn" id="u24" onclick="UpgradeClick()" onmouseover="upgradeName('Upgrade 24')">[<span id="Upgrade 24">000</span>] Upgrade 24</button>
+                <button class="ubtn" id="u25" onclick="UpgradeClick()" onmouseover="upgradeName('Upgrade 25')">[<span id="Upgrade 25">000</span>] Upgrade 25</button>
+                <button class="ubtn" id="u26" onclick="UpgradeClick()" onmouseover="upgradeName('Upgrade 26')">[<span id="Upgrade 26">000</span>] Upgrade 26</button>
+                <button class="ubtn" id="u27" onclick="UpgradeClick()" onmouseover="upgradeName('Upgrade 27')">[<span id="Upgrade 27">000</span>] Upgrade 27</button>
+                <button class="ubtn" id="u28" onclick="UpgradeClick()" onmouseover="upgradeName('Upgrade 28')">[<span id="Upgrade 28">000</span>] Upgrade 28</button>
+                <button class="ubtn" id="u29" onclick="UpgradeClick()" onmouseover="upgradeName('Upgrade 29')">[<span id="Upgrade 29">000</span>] Upgrade 29</button>
+                <button class="ubtn" id="u30" onclick="UpgradeClick()" onmouseover="upgradeName('Upgrade 30')">[<span id="Upgrade 30">000</span>] Upgrade 30</button>
+                <button class="ubtn" id="u31" onclick="UpgradeClick()" onmouseover="upgradeName('Upgrade 31')">[<span id="Upgrade 31">000</span>] Upgrade 31</button>
+                <button class="ubtn" id="u32" onclick="UpgradeClick()" onmouseover="upgradeName('Upgrade 32')">[<span id="Upgrade 32">000</span>] Upgrade 32</button>
+                <button class="ubtn" id="u33" onclick="UpgradeClick()" onmouseover="upgradeName('Upgrade 33')">[<span id="Upgrade 33">000</span>] Upgrade 33</button>
+                <button class="ubtn" id="u34" onclick="UpgradeClick()" onmouseover="upgradeName('Upgrade 34')">[<span id="Upgrade 34">000</span>] Upgrade 34</button>
+                <button class="ubtn" id="u35" onclick="UpgradeClick()" onmouseover="upgradeName('Upgrade 35')">[<span id="Upgrade 35">000</span>] Upgrade 35</button>
+                <button class="ubtn" id="u36" onclick="UpgradeClick()" onmouseover="upgradeName('Upgrade 36')">[<span id="Upgrade 36">000</span>] Upgrade 36</button>
+                <button class="ubtn" id="u37" onclick="UpgradeClick()" onmouseover="upgradeName('Upgrade 37')">[<span id="Upgrade 37">000</span>] Upgrade 37</button>
+                <button class="ubtn" id="u38" onclick="UpgradeClick()" onmouseover="upgradeName('Upgrade 38')">[<span id="Upgrade 38">000</span>] Upgrade 38</button>
+                <button class="ubtn" id="u39" onclick="UpgradeClick()" onmouseover="upgradeName('Upgrade 39')">[<span id="Upgrade 39">000</span>] Upgrade 39</button>
+                <button class="ubtn" id="u40" onclick="UpgradeClick()" onmouseover="upgradeName('Upgrade 40')">[<span id="Upgrade 40">000</span>] Upgrade 40</button>
+                <button class="ubtn" id="u41" onclick="UpgradeClick()" onmouseover="upgradeName('Upgrade 41')">[<span id="Upgrade 41">000</span>] Upgrade 41</button>
+                <button class="ubtn" id="u42" onclick="UpgradeClick()" onmouseover="upgradeName('Upgrade 42')">[<span id="Upgrade 42">000</span>] Upgrade 42</button>
+                <button class="ubtn" id="u43" onclick="UpgradeClick()" onmouseover="upgradeName('Upgrade 43')">[<span id="Upgrade 43">000</span>] Upgrade 43</button>
+                <button class="ubtn" id="u44" onclick="UpgradeClick()" onmouseover="upgradeName('Upgrade 44')">[<span id="Upgrade 44">000</span>] Upgrade 44</button>
+                <button class="ubtn" id="u45" onclick="UpgradeClick()" onmouseover="upgradeName('Upgrade 45')">[<span id="Upgrade 45">000</span>] Upgrade 45</button>
+                <button class="ubtn" id="u45" onclick="UpgradeClick()" onmouseover="upgradeName('Upgrade 46')">[<span id="Upgrade 46">000</span>] Upgrade 46</button>
+                <button class="ubtn" id="u46" onclick="UpgradeClick()" onmouseover="upgradeName('Upgrade 47')">[<span id="Upgrade 47">000</span>] Upgrade 47</button>
+                <button class="ubtn" id="u48" onclick="UpgradeClick()" onmouseover="upgradeName('Upgrade 48')">[<span id="Upgrade 48">000</span>] Upgrade 48</button>
+                <button class="ubtn" id="u49" onclick="UpgradeClick()" onmouseover="upgradeName('Upgrade 49')">[<span id="Upgrade 49">000</span>] Upgrade 49</button> 
+                <button class="ubtn" id="u50" onclick="UpgradeClick()" onmouseover="upgradeName('Upgrade 50')">[<span id="Upgrade 50">000</span>] Upgrade 50</button> 
+            </div>
+            <div class="info">
+                <h2 id="upgrade_name">UPGRADE</h2>
+                <p id="cost">COST: <span id="upgrade_cost"></span></p>
+                <p id="upgrade_pps">＋PPS: <span id="pps"></span></p>
+                <p>[]</p>
+                <h3>CLICK TO UPGRADE</h3>
+                <p id="content">[]</p>
+                <p id="upgrade_cps">PPS: <span id="cps">0</span></p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

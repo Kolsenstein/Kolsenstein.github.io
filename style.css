@@ -1,0 +1,508 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: "Kremlin";
+    src: url(Assets/Fonts/kremlin.ttf);
+}
+
+@font-face {
+    font-family: "Terminal";
+    src: url(Assets/Fonts/Terminal.ttf);
+}
+
+@font-face {
+    font-family: "Archivo";
+    src: url(Assets/Fonts/ArchivoBlack-Regular.ttf)
+}
+
+@font-face {
+    font-family: "RadioSpace";
+    src: url(Assets/Fonts/radiospacebitmap.ttf);
+}
+
+@font-face {
+    font-family: "BitRate";
+    src: url(Assets/Fonts/Bitrate.ttf);
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(Assets/Fonts/Roboto-Black.ttf);
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: url(Assets/Fonts/Oswald-Regular.ttf);
+}
+
+body, html {
+    margin: 0;
+    background: rgb(13, 13, 13);
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    font-family: Kremlin;
+    position: fixed;
+    width: 100%;
+    height: 8vh;
+    background: rgba(13, 13, 13, 0.8);
+    backdrop-filter: blur(10px);
+    color: white;
+    display: flex;
+    align-items: center;
+    flex: space-evenly;
+    z-index: 3;
+    box-shadow: 0vw 0vw 10px rgb(177, 31, 31);
+}
+
+header h1 {
+    font-size: 35px;
+    width: 10vw;
+    padding-left: 1vw;
+}
+
+header ul {
+    padding-left: 5vw;
+    gap: 2vw;
+    display: flex;
+    list-style: none;
+    font-family: RadioSpace;
+}
+
+header li {
+    font-size: 20px;
+    padding-right: 3vw;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+header ul li a:hover {
+    color: rgb(212, 69, 69);
+}
+
+.buy {
+    position: absolute;
+    display: flex;
+    width: 10vw;
+    height: 8vh;
+    background-color: rgb(212, 69, 69);
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+    top: 0;
+}
+
+.buy-content {
+    font-family: BitRate;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.buy-content p {
+    margin: 0;
+    padding: 0;
+}
+
+.about {
+    position: absolute;
+    right: 10vw;
+}
+
+.hacknet-bg {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.hacknet-bg video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+}
+
+.bar {
+    position: absolute;
+    width: 100%;
+    height: 20vh;
+    background-color: rgb(13, 13, 13);
+}
+
+.hacknet-logo {
+    z-index: 1;
+}
+
+.game-overview {
+    height: 300vh;
+    color: #e79e00;
+}
+
+.game-overview h2 {
+    font-family: Kremlin;
+    padding-top: 15vh;
+    text-align: center;
+    font-size: 100px;
+}
+
+.game-overview img {
+    position: relative;
+    z-index: -1;
+}
+
+.preview {
+    position: absolute;
+    width: 40vw;
+    box-shadow: -1vw -1vh 10px rgb(62, 64, 85);
+}
+
+.game-content {
+    font-family: Oswald;
+    position: relative;
+    width: 40vw;
+    height: 40vh;
+    background-color: rgb(9, 10, 14);
+    z-index: 2;
+    color: white;
+    text-align: left;
+    box-shadow: 1vw 1vh 10px rgb(62, 64, 85);
+}
+
+.game-content h4 {
+    font-family: Roboto;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    font-size: 60px;
+    color: #fff27e;
+}
+
+.game-content p {
+    word-wrap: break-word;
+    padding-left: 2vw;
+    font-size: 30px;
+    padding-right: 2vw;
+}
+
+.real-hack {
+    position: relative;
+    left: 20%;
+}
+
+.mystery {
+    position: relative;
+    left: 20%;
+    top: 3%;
+}
+
+.mystery img {
+    right: -25vw;
+}
+
+.immersion {
+    position: relative;
+    left: 20%;
+    top: 3%;
+}
+
+.line {
+    position: absolute;
+    background-color: rgb(183, 29, 36);
+    width: 100%;
+    height: 1vh;
+    top: 400vh;
+}
+
+.end-card {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.end-card h2 {
+    font-family: Kremlin;
+    padding-top: 5vh;
+    color: #e79e00;
+    font-size: 100px;
+    height: 10vh;
+    text-align: center;
+}
+
+
+.end-card ul{
+    color: white;
+    list-style: none;
+    width: 20vw;
+}
+
+.list {
+    position: relative;
+    top: 15vh;
+    left: 3vw;
+}
+
+.head {
+    font-family: Oswald;
+    font-size: 40px;
+}
+
+.info {
+    font-family: Arial;
+    font-size: 20px;
+}
+
+footer {
+    position: relative;
+    display: flex;
+    background-color: rgba(13, 13, 13, 0.7);
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    height: 20vh;
+    bottom: 0;
+}
+
+.team {
+    position: relative;
+    width: 8vw;
+    bottom: 0;
+    z-index: 2;
+    left: 1vw;
+}
+
+footer h3 {
+    font-family: Oswald;
+}
+
+
+footer p {
+    position: relative;
+    font-family: Oswald;
+    bottom: 0;
+}
+
+footer a {
+    text-decoration: underline;
+    color:rgb(183, 29, 36);
+}
+
+.footer-text {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    height: 100%;
+    line-height: 7vh;
+    color: white;
+}
+
+
+.footer-text a:hover {
+    color:rgb(212, 69, 69);
+}
+
+.esrb {
+    position: relative;
+    width: 6vw;
+    left: 84vw;
+}
+
+.rating {
+    position: relative;
+    width: 6vw;
+    left: 71vw;
+}
+
+.twitter {
+    width: 3vw;
+}
+
+.youtube {
+    width: 2.6vw;
+    margin-top: 0.5vh;
+}
+
+.facebook {
+    width: 3vw;
+}
+
+.instagram {
+    width: 3vw;
+}
+
+.mail {
+    width: 3vw;
+}
+
+.socials {
+    display: flex;
+    height: 6vh;
+    width: 15vw;
+    justify-content: space-evenly;
+    align-self: center;
+}
+
+.gallery {
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(27, 184, 131);
+}
+
+.gallery ul a {
+    color: rgb(27, 184, 131);
+}
+
+.terminal {
+    text-align: left;
+    position: relative;
+    background-color: rgb(64, 75, 80);
+    height: 45vh;
+    width: 15vw;
+}
+
+
+.terminal h1 {
+    font-size: 2.5vw;
+    font-family: Terminal;
+    padding-bottom: 3vh;
+}
+
+.terminal ul {
+    list-style: none;
+    font-size: 1.4vw;
+    font-family: Terminal;
+}
+
+.terminal ul li {
+    margin-top: 2vh;
+}
+
+.gallery_item {
+    cursor: pointer;
+}
+
+.gallery_item:hover {
+    color: rgb(255, 165, 0);
+}
+
+.gallery a:hover {
+    color: rgb(255, 165, 0);
+}
+
+.gallery_item:last-child:hover {
+    color:rgb(27, 184, 131);
+    cursor: default;
+}
+
+#type {
+    padding-top: 3.5vh;
+    padding-left: 0.5vw;
+    font-size: 2vw;
+}
+
+.gallery_container {
+    height: 50vh;
+    width: 50vw;
+}
+
+.gallery_img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.gallery_img:hover {
+    transform: scale(1.4) translate(-5%, -5%);
+    transition: transform 1s ease;
+}
+
+.border {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45vh;
+    margin: 10vw;
+    box-shadow: 0vw 0vw 100px rgb(10, 131, 91);
+}
+
+.map {
+    position: relative;
+    align-self: center;
+    bottom: 15vh;
+}
+
+.icon {
+    position: relative;
+    left: 80vw;
+    bottom: 45vh;
+}
+
+.lines {
+    margin-top: 40vh;
+    width: 40vw;
+}
+
+.lines-r {
+    margin-top: 70vh;
+    width: 40vw;
+}
+
+.lines- {
+    opacity: 0.5;
+}
+
+.lines-back {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: -15vw;
+    z-index: -100;
+    justify-content: center;
+    align-items: center;
+}
+
+.lines-back-r {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: -15vw;
+    z-index: -100;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon a img:first-child:hover {
+    box-shadow: 0vw 0vw 30px rgb(15, 41, 77);
+    background: rgb(42, 211, 223);
+    border-radius: 70px;
+}
+
+.icon a:nth-child(2) img:hover {
+    box-shadow: 0 0 30px rgb(136, 7, 211);
+    background: rgb(151, 78, 194);
+    border-radius: 15px;
+}
