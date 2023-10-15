@@ -50,6 +50,9 @@ body, html {
     margin: 0;
     background: rgb(13, 13, 13);
     height: 100%;
+body {
+    margin: 0;
+    background: rgb(13, 13, 13);
 }
 
 a {
@@ -98,6 +101,9 @@ header ul li a {
 
 header ul li a:hover {
     color: rgb(212, 69, 69);
+header ul li a:hover {
+    color: rgb(212, 69, 69);
+    font-size: 22px;
 }
 
 .buy {
@@ -160,6 +166,7 @@ header ul li a:hover {
 .game-overview {
     height: 300vh;
     color: #e79e00;
+    color: white;
 }
 
 .game-overview h2 {
@@ -246,6 +253,7 @@ header ul li a:hover {
     font-family: Kremlin;
     padding-top: 5vh;
     color: #e79e00;
+    color: white;
     font-size: 100px;
     height: 10vh;
     text-align: center;
@@ -411,6 +419,11 @@ footer a {
 
 .gallery a:hover {
     color: rgb(255, 165, 0);
+    color: rgb(38, 107, 84);
+}
+
+.gallery a:hover {
+    color: rgb(38, 107, 84);
 }
 
 .gallery_item:last-child:hover {

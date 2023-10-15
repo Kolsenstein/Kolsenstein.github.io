@@ -66,3 +66,4 @@ const output = document.getElementById('output');
         window.onload = () => {
             simulateStartup();
         };
+})
