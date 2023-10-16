@@ -4,7 +4,7 @@ Hacknet is a gaming website project I developed for my campus, inspired by the g
 
 ## Usage
 
-Visit [the website](https://Kolsenstein.github.io/home.html) and explore its contents to your heart's content.
+Visit [the website](https://Kolsenstein.github.io/home.html) and explore its contents to your heart's desire.
 
 ## License
 
